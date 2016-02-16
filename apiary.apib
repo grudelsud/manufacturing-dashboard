@@ -28,11 +28,27 @@ Shows the list of machines with browseable API to discover the phase details
                         "line_name": "L",
                         "details_url": "/phases/mch1234/L",
                         "value": 86
-                    }
+                    },
                     {
                         "line_name": "R",
                         "details_url": "/phases/mch1234/R",
                         "value": 92
+                    }
+                ]
+            },
+            {
+                "machine_id": "mch1235",
+                "machine_name": "Machine 1235",
+                "efficiency": [
+                    {
+                        "line_name": "L",
+                        "details_url": "/phases/mch1235/L",
+                        "value": 99
+                    },
+                    {
+                        "line_name": "R",
+                        "details_url": "/phases/mch1235/R",
+                        "value": 62
                     }
                 ]
             }
@@ -54,7 +70,8 @@ describes all the phases each machine goes through and can be used both for
 + Response 200 (application/json)
 
         {
-            "machine_name": "",
+            "machine_id": "mch1234",
+            "machine_name": "Machine 1234",
             "phases": [
                 {
                     "phase_name": "phase 1",
@@ -67,7 +84,7 @@ describes all the phases each machine goes through and can be used both for
                         {
                             "time": "2016-02-16T10:55:47.569Z"
                             "value": 118 
-                        },
+                        }
                     ],
                     "cycle_time_exp": 120,
                 },
@@ -82,7 +99,7 @@ describes all the phases each machine goes through and can be used both for
                         {
                             "time": "2016-02-16T10:55:47.569Z"
                             "value": 245 
-                        },
+                        }
                     ],
                     "cycle_time_exp": 240,
                 }
