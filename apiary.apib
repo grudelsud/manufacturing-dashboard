@@ -1,9 +1,9 @@
 FORMAT: 1A
-HOST: http://tmadashboard001.apiblueprint.org/
+HOST: http://private-550e9-tmadashboard001.apiary-mock.com
 
 # Dashboard 001
 
-Dashboard 001 is a simple test API that shows data from 
+Dashboard 001 is a simple test API that shows sample data from 
 factory machines doing tests on the manufacturing line output. The API
 conforms to [HATEOAS principles](https://en.wikipedia.org/wiki/HATEOAS) for browseable APIs. 
 
@@ -40,10 +40,10 @@ Shows the list of machines with browseable API to discover the phase details
 
 ## Phases [/phases/{machine_id}/{line_id}]
 
-can be used both for 
+describes all the phases each machine goes through and can be used both for 
 
-- cumulative gain/loss, by making a simple difference between `cycle_time_exp` and all the values detailed in `cycle_time_act` and
-- cycle time series, by plotting each value in `cycle_time_act` with respective *EV*
+- cumulative gain/loss of all phases, by making a simple difference between `cycle_time_exp` and all the values detailed in `cycle_time_act` and
+- cycle time series for each single phase, by plotting each value in `cycle_time_act` with respective *EV*
 
 + Parameters
     + machine_id (string) - machine id
